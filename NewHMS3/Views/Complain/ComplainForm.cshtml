@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "ComplainForm";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body style="background-image:url(../img/blur1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 750px;
+    position:relative;">
+	<style>
+		a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+	</style>
+	<div>
+		<meta name="viewport" content="width=device-width" />
+		<title>ComplainForm</title>
+
+		<h2 style="color: white;text-align:center; border: 90px solid darkblue; background-color: darkblue"> @Html.ActionLink("Status Check", "StudentActivityForm", "StudentActivity", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Complains", "ComplainForm", "Complain", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Fee Challan", "ChallanForm", "Challan", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Leave Hostel", "LeaveForm", "Leave", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Log out", "LoginForm", "Login", null, new { style = "color:white" })</h2>
+		<h2 style="color: white;text-align:center; border: 30px solid darkblue;font-size: 22px;background-color: darkblue"> Complains </h2>
+		<p>
+			<h1 style="color: darkblue; margin-left :500px ;font-size: 22px"> Write your complains here: </h1>
+			<textarea style="color: white; margin-left :500px; width:1000px;height:450px;" name="textarea"></textarea>
+			<input style="color: white;font-size: 20px;height:50px;width:110px;text-align:center; background-color: darkblue" id="Add" type="button" value="Add" />
+
+		</p>
+
+	</div>
+</body>
+</html>

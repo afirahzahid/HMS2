@@ -1,0 +1,56 @@
+﻿
+@{
+	ViewBag.Title = "AdminLogForm";
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+</head>
+<body style="background-image:url(../img/blur1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 750px;
+    position:relative;
+	  ">
+	<style>
+		a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+	</style>
+	<div>
+		<meta name="viewport" content="width=device-width" />
+		<title>LoginForm</title>
+		<h2 style="color: white;text-align:center; border: 90px solid darkblue; background-color: darkblue">  @Html.ActionLink("Home", "Index", "Home", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; @Html.ActionLink("About Us", "AboutForm", "About", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  @Html.ActionLink("Contact Us", "ContactForm", "Contact", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; @Html.ActionLink("Register", "RegisterForm", "Register", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; @Html.ActionLink("Login", "LogForm", "Log", null, new { style = "color:white" }) </h2>
+		<form action="action_page.php">
+
+			<div class="container">
+				<h1> &nbsp; &nbsp; </h1>
+
+
+				<h1 style="color:darkblue; padding: -2px; font-size:25px; text-align:center" for="uname"><b>Login ID</b></h1>
+				<input id="Text1" type="text" style="margin-left:870px; width: 300px; height:45px;" placeholder="Enter Login ID" name="uname" required>
+
+				<h1 style="color: darkblue; padding: -2px; font-size:25px; text-align:center" type="submit" for="psw"><b>Password</b></h1>
+				<input id="Text1" type="password" style="margin-left:870px;  width: 300px; height:45px;" placeholder="Enter Password" name="psw" required>
+
+				<h2 style="color: black;padding: 20px; margin-left:40px ;text-align:center"><button type="submit" style="color: white;font-size: 20px;height:50px;width:170px;text-align:center; background-color: darkblue" onclick="location.href='@Url.Action("AdminForm", "Admin")';return false;">Login</button></h2>
+
+				<h2 style="color:darkblue; font-size:20px;margin-left:870px">
+					<input type="checkbox" checked="checked" name="remember"> Remember me &nbsp; &nbsp;
+
+
+				</h2>
+				<h2 style="color: black;padding: 0px; margin-left:870px"><button style="color: white;font-size: 20px;height:50px;width:140px;text-align:center; background-color: darkblue" onclick="location.href='@Url.Action("Index", "Home")';return false;"> Cancel</button></h2>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

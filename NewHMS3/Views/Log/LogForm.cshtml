@@ -1,0 +1,56 @@
+﻿
+@{
+	ViewBag.Title = "LogForm";
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+	<title>LogForm</title>
+</head>
+<body style="background-image:url(../img/blur1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 750px;
+    position:relative;
+	  ">
+	<style>
+		a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+	</style>
+
+	<div>
+		<h2 style="color: white;text-align:center; border: 90px solid darkblue; background-color: darkblue">  @Html.ActionLink("Home", "Index", "Home", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; @Html.ActionLink("About Us", "AboutForm", "About", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  @Html.ActionLink("Contact Us", "ContactForm", "Contact", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; @Html.ActionLink("Register", "RegisterForm", "Register", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; @Html.ActionLink("Login", "LogForm", "Log", null, new { style = "color:white" }) </h2>
+		<h1> &nbsp; </h1>
+		<h2 style="color: black;padding: 20px; text-align:center"><button style="color: white;font-size: 20px;height:60px;width:300px;text-align:center; background-color: darkblue" onclick="location.href='@Url.Action("LoginForm", "Login")';return false;">Login as Student</button></h2>
+		<h2 style="color: black;padding: 20px;text-align:center"><button style="color: white;font-size: 20px;height:60px;width:300px;text-align:center; background-color: darkblue" onclick="location.href='@Url.Action("AdminLogForm", "AdminLog")';return false;">Login as Admin</button></h2>
+		<h2 style="color: black;padding: 20px;text-align:center"><button style="color: white;font-size: 20px;height:60px;width:300px;text-align:center; background-color: darkblue" onclick="location.href='@Url.Action("RtLogForm", "RtLog")';return false;">Login as RT</button></h2>
+		<h2 style="color: black;padding: 20px;text-align:center"><button style="color: white;font-size: 20px;height:60px;width:300px;text-align:center; background-color: darkblue" onclick="location.href='@Url.Action("StaffLogForm", "StaffLog")';return false;">Login as Staff Member</button></h2>
+
+	</div>
+</body>
+<footer style="color: white;text-align:center; border: 3px solid darkblue; background-color: darkblue; margin-top:90px">
+
+
+	<h5>CONTACT US</h5>
+	<i class="fa fa-map-marker"></i>University of Engineering and technology, Lahore, Pakistan&nbsp;&nbsp;
+	<i class="fa fa-phone"></i>(+042) 666 12&nbsp;&nbsp;
+	<i class="fa fa-envelope"></i>info.HMS@gmail.com&nbsp;&nbsp;
+	<i class="fa fa-clock-o"></i>Mon - Sat, 08 AM - 06 PM
+
+
+
+	<p>
+
+		Copyright &copy;
+		<script>document.write(new Date().getFullYear());</script> All rights reserved
+
+	</p>
+	<!-- Footer section end -->
+</html>

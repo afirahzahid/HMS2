@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "ChallanForm";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head> 
+</head>
+<body style="background-image:url(../img/blur1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 750px;
+    position:relative;">
+	<style>
+		a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+	</style>
+	<div>
+		<meta name="viewport" content="width=device-width" />
+		<title>ChallanForm</title>
+		<h2 style="color: white;text-align:center; border: 90px solid darkblue; background-color: darkblue"> @Html.ActionLink("Status Check", "StudentActivityForm", "StudentActivity", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Complains", "ComplainForm", "Complain", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Fee Challan", "ChallanForm", "Challan", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Leave Hostel", "LeaveForm", "Leave", null, new { style = "color:white" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Html.ActionLink("Log out", "LoginForm", "Login", null, new { style = "color:white" })</h2>
+		<h2 style="color: white;text-align:center; border: 30px solid darkblue;font-size: 22px;background-color: darkblue"> Challan Form </h2>
+		
+		<h3 style="color: darkblue; margin-right:100; text-align:right"> Print  &nbsp; &nbsp;</h3>
+		<h3 style="color: white;text-align:center; border: 20px solid darkblue; font-size:22px; background-color: darkblue"> Challan Id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Due Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Is Paid </h3>
+	</div>
+</body>
+</html>
